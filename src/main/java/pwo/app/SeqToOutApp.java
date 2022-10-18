@@ -2,8 +2,17 @@ package pwo.app;
 
 import pwo.utils.SequenceTools;
 
+/**
+ * Klasa wyswietlajaca wyrazu obliczonegi ciagu w konsoli
+ * @author patry
+ */
 public class SeqToOutApp extends SeqToFileApp {
 
+    /**
+     *
+     * @param args
+     * @return Wartosc logiczna
+     */
     @Override
     protected boolean getArgs(String[] args) {
         if (super.getArgs(args)) {
@@ -13,6 +22,10 @@ public class SeqToOutApp extends SeqToFileApp {
         return seqType != null && from >= 0 && to >= 0;
     }
 
+    /**
+     *
+     * @return Wartosc logiczna informujaca to akcji zakonczonej powodzeniem
+     */
     @Override
     protected boolean wirteSeq() {
         System.out.println(SequenceTools.getTermsAsColumn(
@@ -21,6 +34,10 @@ public class SeqToOutApp extends SeqToFileApp {
         return true;
     }
 
+    /**
+     *
+     * @param args - Ciag znakow informujacy o niepowodzeniu
+     */
     @Override
     public void run(String[] args) {
         System.out.println("Sequence to terminal CLI app");

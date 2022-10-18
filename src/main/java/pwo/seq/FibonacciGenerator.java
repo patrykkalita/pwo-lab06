@@ -2,8 +2,16 @@ package pwo.seq;
 
 import java.math.BigDecimal;
 
+/**
+ * Klasa pomagająca wyliczyc ciag fibonacciego
+ * @author patryk
+ */
 public class FibonacciGenerator extends Generator {
 
+    /**
+     * Metoda zawierająca zmienne przechowujące wartosc obecna
+     * oraz pierwsze dwa wyrazy ciagu
+     */
     public FibonacciGenerator() {
         current = new BigDecimal(0);
         f_1 = new BigDecimal(1);

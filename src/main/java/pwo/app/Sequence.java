@@ -1,7 +1,15 @@
 package pwo.app;
 
+/**
+ * Klasa glowna aplikacji
+ * @author patry
+ */
 public class Sequence {
 
+    /**
+     *
+     * @param args - Parametr mowiacy jaka operacje chceny wykonac
+     */
     public static void main(String[] args) {
 
         switch (args.length) {
